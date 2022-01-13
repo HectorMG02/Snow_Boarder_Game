@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float torqueAmount = 3f;
     [SerializeField] float boostSpeed = 30f;
     [SerializeField] float baseSpeed = 20f;
+    public bool death = false;
      
     
     Rigidbody2D rb2d;
@@ -21,13 +23,21 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        RotatePlayer();
-        RespondToBoost();
+        if (!death)
+        {
+            RotatePlayer();
+            RespondToBoost();
+        }
+        else
+        {
+            float deathSpeed = UnityEngine.Random.Range(-2f, 2f);
+            surfaceEffector2D.speed = deathSpeed;
+        }
     }
 
     private void RespondToBoost()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && !death)
         { 
             surfaceEffector2D.speed = boostSpeed;
         }else

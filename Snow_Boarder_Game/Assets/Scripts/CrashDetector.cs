@@ -7,12 +7,24 @@ using UnityEngine.SceneManagement;
 public class CrashDetector : MonoBehaviour
 {
     [SerializeField] ParticleSystem crashEffect;
+    [SerializeField] AudioClip crashSound;
+    [SerializeField] float loadDelay = 2f;
+    [SerializeField] PlayerController player;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Ground")
         {
-            crashEffect.Play();
-            Invoke("NextScene", 2f);
+
+            if (!player.death)
+            {
+                crashEffect.Play();
+                GetComponent<AudioSource>().PlayOneShot(crashSound);
+            }
+            
+            player.death = true;
+            
+            Invoke("NextScene", loadDelay);
         }
     }
     
