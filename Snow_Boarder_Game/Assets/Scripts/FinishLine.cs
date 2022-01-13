@@ -13,7 +13,7 @@ public class FinishLine : MonoBehaviour
         if (other.CompareTag("Player")) 
         { 
             finishEffect.Play(); 
-            Invoke("ReloadScene", 2f); // esperamos 2 segundos para cargar la siguiente escena
+            Invoke("ReloadScene", 1f); // esperamos 2 segundos para cargar la siguiente escena
         }
     }
     
