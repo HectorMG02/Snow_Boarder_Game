@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
+    [SerializeField] ParticleSystem finishEffect;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) 
-        {
-           Invoke("ReloadScene", 2f); // esperamos 2 segundos para cargar la siguiente escena
+        { 
+            finishEffect.Play(); 
+            Invoke("ReloadScene", 2f); // esperamos 2 segundos para cargar la siguiente escena
         }
     }
     
