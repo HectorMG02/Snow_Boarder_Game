@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="318cee42-59c0-4d6c-b0e1-0fa57e60ac66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Crash+SFX.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Crash+SFX.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Finish+SFX.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Finish+SFX.ogg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Snow_Boarder_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Snow_Boarder_Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CrashDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CrashDetector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642086481157</updated>
-      <workItem from="1642086486885" duration="9348000" />
+      <workItem from="1642086486885" duration="9652000" />
     </task>
     <servers />
   </component>
